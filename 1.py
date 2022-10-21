@@ -1,6 +1,7 @@
-def translation():
-    figure = int(input("Введите число:"))
-    system = int(input("Введите целевую систему счисления (2 или 8):"))
+figure = int(input("Введите число:"))
+system = int(input("Введите целевую систему счисления (2 или 8):"))
+
+def translation(figure, system):
     result = ''
     if system == 2:
         while figure > 0:
@@ -15,4 +16,4 @@ def translation():
     else:
         print("Ошибка: введите одно из предложенных оснований систем счисления")
 
-translation()
+translation(figure, system)
